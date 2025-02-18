@@ -1,0 +1,12 @@
+# FLASK APP - 21I-1148, Amna Shahid, SE-A, Class Task: 01
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Deploying Flask App at Vercel"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
